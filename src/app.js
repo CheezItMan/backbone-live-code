@@ -1,5 +1,11 @@
 import $ from 'jquery';
 
+
+var NewTaskView = Backbone.View.extend({
+
+});
+
+
 var taskData = [
   {
     title: 'Mow the lawn',

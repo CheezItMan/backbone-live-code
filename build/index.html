@@ -6,9 +6,31 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <div id="test-area">
-  </div>
+  <header>
 
+  </header>
+  <main>
+    <div class="row">
+      <section id="left" class="column middle-4">
+        <div id="new-task"></div>
+        <div id="task-list"></div>
+      </section>
+      <section id="task-details" class="column middle-8">
+      </section>
+    </div>
+  </main>
+
+  <script type="text/template" id="tpl-new-task">
+       <form>
+         <input type="text" name="title" id="new-task-title"
+         value="<%= title %>"
+         >
+         <textarea id="new-task-description" placeholder="none">
+            <%= description %>
+         </textarea>
+         <button class="success button">Add Task</button>
+       </form>
+   </script>
   <script src="/app.bundle.js" charset="utf-8"></script>
 </body>
 </html>
