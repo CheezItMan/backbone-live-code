@@ -9,3 +9,8 @@ li.task {
   padding: 10px;
   margin: 10px;
 }
+
+.header-text {
+  text-align: center;
+  color: green;
+}
